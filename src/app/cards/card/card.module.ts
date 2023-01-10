@@ -1,32 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { EditComponent } from '../edit/edit.component';
+import { RouterModule } from '@angular/router';
 import { CardComponent } from './card.component';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: CardComponent
-  }
-];
 
 
 @NgModule({
-  declarations: [
-		CardComponent,
-		EditComponent
-  ],
-  imports: [
-		CommonModule,
-		RouterModule.forChild(routes)
-  ],
-	exports: [
-		CardComponent,
-		RouterModule,
-		EditComponent
+	declarations: [
+		CardComponent
 	],
-  providers: [],
-  bootstrap: []
+	imports: [
+		CommonModule,
+		RouterModule
+	],
+	exports: [
+		CardComponent
+	],
+	providers: [],
+	bootstrap: []
 })
 export class CardModule { }

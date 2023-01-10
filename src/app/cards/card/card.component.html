@@ -1,1 +1,6 @@
-<p>card works!</p>
+<p>Full name {{list.name}}</p>
+<p>City {{list.address.city}}</p>
+<p>Company {{list.company?.name}}</p>
+<div>
+	<a [routerLink]="['/card',list.id]">DDD</a>
+</div>

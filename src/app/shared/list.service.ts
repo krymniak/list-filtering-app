@@ -11,6 +11,10 @@ export class ListService {
 	){}
 
 	getList(): Observable<User[]> {
-		return this._http.get<User[]>('https://jsonplaceholder.typicode.com/users')
+		return this._http.get<User[]>(`https://jsonplaceholder.typicode.com/users`)
+	}
+
+	getById(id: string): Observable<User> {
+		return this._http.get<User>(`https://jsonplaceholder.typicode.com/users/${id}`)
 	}
 }

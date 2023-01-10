@@ -1,7 +1,10 @@
+
 <div>
 	<div></div>
 	<div>
 		<h2>List of users</h2>
-		<div></div>
+		<div>
+			<app-card *ngFor="let list of list$ | async" [list]="list"></app-card>
+		</div>
 	</div>
 </div>
