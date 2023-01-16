@@ -1,0 +1,82 @@
+.main{
+	border-radius: 8px;
+	display: flex;
+	width: 420px;
+	flex-direction:column;
+	margin: 10px 0px 0px 0px;
+	background: #061125;
+	.name{
+		display: flex;
+		h2{
+			margin: 10px 0px 0px 10px;
+			width: 100px;
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+color: #72B63B;
+		}
+		span{
+			padding: 10px 0px 0px 0px;
+			font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+color: aliceblue;
+		}
+	}
+	.city{
+		display: flex;
+		h2{
+			width: 100px;
+			margin: 10px 0px 0px 10px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 11px;
+			line-height: 13px;
+			color: #72B63B;
+					}
+					span{
+						padding: 10px 0px 0px 0px;
+						font-style: normal;
+			font-weight: 400;
+			font-size: 11px;
+			line-height: 13px;
+			color: aliceblue;
+					}
+	}
+	.company{
+		display: flex;
+		h2{
+			width: 100px;
+			margin: 10px 0px 10px 10px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 11px;
+			line-height: 13px;
+			color: #72B63B;
+					}
+					span{
+						padding: 10px 0px 10px 0px;
+						font-style: normal;
+			font-weight: 400;
+			font-size: 11px;
+			line-height: 13px;
+			color: aliceblue;
+					}
+			a{
+				font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+text-decoration: none;
+color: #72B63B;
+flex-grow:1;
+text-align: right;
+padding: 10px 10px 0px 0px;
+			}
+	}
+}

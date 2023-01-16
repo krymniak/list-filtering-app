@@ -1,9 +1,13 @@
 
-<div>
-	<div></div>
-	<div>
+<div class="main">
+	<div class="main__leftside">
+		<span>Sort:</span>
+		<button>by city</button>
+		<button>by company</button>
+	</div>
+	<div class="main__rightside">
 		<h2>List of users</h2>
-		<div>
+		<div class="card">
 			<app-card *ngFor="let list of list$ | async" [list]="list"></app-card>
 		</div>
 	</div>

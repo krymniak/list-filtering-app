@@ -1,3 +1,51 @@
 <div>
-	{{user.name}}
+	<div>
+		<button>Back to list</button>
+	</div>
+	<div>
+		<div>
+			<span>User Profile</span>
+			<button>Edit</button>
+		</div>
+		<div>
+			<form [formGroup]="form" (ngSubmit)="submit()">
+				<div class="form-control" [ngClass]="{invalid: form.get('name')?.touched && form.get('name')?.invalid}">
+					<label for="name">Name:</label>
+					<input id="name" type="text" formControlName="name">
+				</div>
+				<div class="form-control" [ngClass]="{invalid: form.get('username')?.touched && form.get('username')?.invalid}">
+					<label for="username">Name:</label>
+					<input id="username" type="text" formControlName="username">
+				</div>
+				<div class="form-control" [ngClass]="{invalid: form.get('email')?.touched && form.get('email')?.invalid}">
+					<label for="email">Name:</label>
+					<input id="email" type="email" formControlName="email">
+				</div>
+				<div class="form-control" [ngClass]="{invalid: form.get('street')?.touched && form.get('street')?.invalid}">
+					<label for="street">Name:</label>
+					<input id="street" type="text" formControlName="street">
+				</div>
+				<div class="form-control" [ngClass]="{invalid: form.get('city')?.touched && form.get('city')?.invalid}">
+					<label for="city">Name:</label>
+					<input id="city" type="text" formControlName="city">
+				</div>
+				<div class="form-control" [ngClass]="{invalid: form.get('zipcode')?.touched && form.get('zipcode')?.invalid}">
+					<label for="zipcode">Name:</label>
+					<input id="zipcode" type="text" formControlName="zipcode">
+				</div>
+				<div class="form-control" [ngClass]="{invalid: form.get('phone')?.touched && form.get('phone')?.invalid}">
+					<label for="phone">Name:</label>
+					<input id="phone" type="text" formControlName="phone">
+				</div>
+				<div class="form-control" [ngClass]="{invalid: form.get('website')?.touched && form.get('website')?.invalid}">
+					<label for="website">Name:</label>
+					<input id="website" type="text" formControlName="website">
+				</div>
+				<div class="form-control" [ngClass]="{invalid: form.get('comment')?.touched && form.get('comment')?.invalid}">
+					<label for="comment">Name:</label>
+					<input id="comment" type="text" formControlName="comment">
+				</div>
+			</form>
+		</div>
+	</div>
 </div>

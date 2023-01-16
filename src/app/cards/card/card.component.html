@@ -1,6 +1,16 @@
-<p>Full name {{list.name}}</p>
-<p>City {{list.address.city}}</p>
-<p>Company {{list.company?.name}}</p>
-<div>
-	<a [routerLink]="['/card',list.id]">DDD</a>
+<div class="main">
+	<div class="name">
+		<h2>Full Name</h2>
+		<span>{{list.name}}</span>
+	</div>
+	<div class="city">
+		<h2>City</h2>
+		<span>{{list.address.city}}</span>
+	</div>
+	<div class="company">
+		<h2>Company</h2>
+		<span>{{list.company?.name}}</span>
+		<a [routerLink]="['/card',list.id]">Detail</a>
+	</div>
 </div>
+

@@ -1,0 +1,16 @@
+.form-control {
+  display: block;
+  color: rgb(0, 0, 0);
+  margin-bottom: .8rem;
+
+  &.invalid {
+    color: var(--primary-color);
+    input {
+      border-color: var(--primary-color);
+    }
+  }
+
+  .validation {
+    color: var(--primary-color);
+  }
+}
