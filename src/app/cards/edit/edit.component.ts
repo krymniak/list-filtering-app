@@ -52,7 +52,6 @@ export class EditComponent implements OnInit, OnDestroy {
 
 	private getUserById(): void {
     this.pSub = this._service.getById(this.id).subscribe(response => {
-			console.log(response)
       this.form.patchValue({
         name: response.name,
         username: response.username,
